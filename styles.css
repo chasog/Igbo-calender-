@@ -1,0 +1,118 @@
+:root {
+  --bg: #f2f2f2;
+  --calendar-bg: #ffffff;
+  --text: #000;
+  --header: #c94b4b;
+  --border: #e0e0e0;
+  --holiday: #27ae60;
+}
+
+body.dark {
+  --bg: #121212;
+  --calendar-bg: #1e1e1e;
+  --text: #ffffff;
+  --header: #333;
+  --border: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+button:focus {
+  outline: 3px solid #3498db;
+  outline-offset: 2px;
+}
+.holiday-day {
+  background: #ffe5e5;
+  border: 1px solid #ff4d4d;
+}
+
+.holiday {
+  color: #d60000;
+  font-size: 0.7rem;
+  font-weight: bold;
+}.calendar {
+  width: 380px;
+  background: var(--calendar-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: brown;
+  color: white;
+  padding: 15px;
+}
+
+.calendar-header button {
+  background: black;
+  border-radius: 5px;
+  border: strong 5px;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  text-align: center;
+  padding: 10px;
+}
+
+.theme-toggle button {
+  border: strong 1px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.weekdays div {
+  padding: 10px;
+  background: #eee;
+  font-weight: bold;
+}
+
+body.dark .weekdays div {
+  background: #2c2c2c;
+}
+
+.day {
+  border: 1px solid var(--border);
+  min-height: 80px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.market {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.holiday {
+  font-size: 11px;
+  margin-top: 4px;
+  color: var(--holiday);
+}
+
+.today {
+  background: #3498db;
+  color: white;
+  border-radius: 6px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0">
+      <meta name="description" 
+      content="Igbo market days calender">
+      <meta name="keywords" 
+      content="igbo calendar">
+      <meta name="author" 
+      content="Asogwa Henry Chidera Chasog">
+      <meta http-equiv="refresh" 
+      content="7200">
+      <title>My login Webpage</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" type="image/x-icon" href="https://uploads.onecompiler.io/43z6dgq6z/44a9rka8x/Instagram%20Post%20-%20MODERN_20260111_114327_0000.png">
+    </head>
+    <body 
+    onload="console.log('Page loaded')" 
+    onbeforeunload="console.log('Are you sure you want to leave?')" 
+    onresize="console.log('Window resized')" 
+    onscroll="console.log('Page scrolled')" 
+    ononline="console.log('Back online')" 
+    onoffline="console.log('Gone offline')">
+<div class="calendar">
+  <div class="calendar-header">
+    <button id="prev">❮prev</button>
+    <h2 id="monthYear"></h2>
+    <button id="next">next❯</button>
+  </div>
+
+  <div class="theme-toggle">
+    <button id="toggleTheme"
+    aria-pressed="false" 
+    aria-label="Toggle dark mode">🌙 Dark Mode</button>
+  </div>
+
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div>
+    <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+
+  <div class="days" id="calendarDays"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
